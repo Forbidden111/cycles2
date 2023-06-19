@@ -53,7 +53,7 @@ public class Main {
 
         int monthCoun = 1;
 
-        while (sum <= goal) {
+        while (sum < goal) {
             System.out.println("Месяц" + monthCoun + " сумма накоплений равна " + sum + "рублей ");
             sum += sum * monthPercent / 100;
             monthCoun++;
@@ -71,7 +71,7 @@ public class Main {
 
         int monthCounk = 0;
 
-        while (sumy <= goaly) {
+        while (sumy < goaly) {
             sumy += sumy * monthPercent / 100;
             monthCounk++;
             if (monthCounk % 6 == 0) {
@@ -79,8 +79,7 @@ public class Main {
             }
         }
         System.out.println("Итоговая сумма: " + sumy + ". Потребовалось месяцев :" + monthCounk);
-        {
-        }
+
 
         // task6
         System.out.println("task6");
@@ -104,9 +103,9 @@ public class Main {
         int fridayCount = 1;
         int dayInMonth = 31;
 
-        while (fridayCount<=dayInMonth){
+        while (fridayCount <= dayInMonth) {
             System.out.println("Сегодня пятница " + fridayCount + "число. Необходимо подготовить отчет " + fridayCount);
-            fridayCount+=7;
+            fridayCount += 7;
 
         }
 
@@ -116,12 +115,12 @@ public class Main {
         int yearsBefore = 200;
         int yearsAfter = 100;
 
-        for (int j = 0; j < currentYear + yearsAfter; j+= 79) {
-            if (j> currentYear-yearsBefore){
+        for (int j = 0; j < currentYear + yearsAfter; j += 79) {
+            if (j > currentYear - yearsBefore) {
                 System.out.println(j);
             }
 
         }
 
-        }
     }
+}
